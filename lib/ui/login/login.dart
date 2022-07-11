@@ -179,7 +179,7 @@ class _LoginScreenState extends State<LoginScreen> {
           style: Theme.of(context)
               .textTheme
               .caption
-              ?.copyWith(color: Colors.orangeAccent),
+              ?.copyWith(color: Color(0xFFFA8072)),
         ),
         onPressed: () {},
       ),
@@ -189,7 +189,7 @@ class _LoginScreenState extends State<LoginScreen> {
   Widget _buildSignInButton() {
     return RoundedButtonWidget(
       buttonText: AppLocalizations.of(context).translate('login_btn_sign_in'),
-      buttonColor: Colors.orangeAccent,
+      buttonColor: Color(0xFFFA8072),
       textColor: Colors.white,
       onPressed: () async {
         if (_store.canLogin) {
